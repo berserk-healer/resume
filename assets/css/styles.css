@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500;1,600&display=swap');
+
+:root {
+    --black: #1f1f24;
+    --green: #52beac;
+    --white: #fdfcfe;
+    --grey: #303841;
+}
+
+.green {
+    color: var(--green)!important;
+}
+
+.mt-3 {
+    margin-top: 30rem!important;
+}
+
+.mt-1 {
+    margin-top: 10rem!important;
+}
+
+.mr {
+    margin-right: .5rem!important;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0; padding: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 17%;
+    height: 72px;
+    background-color: var(--black);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+}
+
+.nav-brand {
+    font-size: 1.8rem;
+    line-height: 72px;
+    color: var(--white)
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-item {
+    padding: 0 2rem;
+}
+
+.nav-item:hover {
+    background-color: var(--green);
+    cursor: pointer;
+}
+
+.nav-link {
+    font-size: 1.6rem; line-height: 72px;
+    color: var(--white);
+    text-align: center;
+}
+.nav-icon {
+    display: none;
+}
+
+.nav-icon i {
+    color: var(--white);
+    font-size: 1.8rem;
+    line-height: 72px;
+}
+
+section {
+    background-color: var(--black);
+    padding: 5rem 15%;
+}
+section h1,
+section h3{
+    color: var(--white);
+    text-align: left;
+}
+
+section h1 {
+    font-size: 3.6rem;
+}
+
+section h3 {
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 5rem auto 0;
+    margin-bottom: 6rem;
+}
+
+.item {
+    background-color: var(--grey);
+    border-radius: .5rem;
+    height: 450px;
+}
+
+.item-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: fill;
+}
+
+.item-description {
+    font-size: 2rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.btn {
+    width: fit-content;
+    display: block; margin: 0 auto;
+    background: var(--grey);
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: var(--white);
+    border-radius: .5rem;
+}
+
+#contact a,
+#contact p {
+    margin-top: 1rem;
+    color: var(--white);
+    display: block;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+#contact a:hover,
+#contact p:hover {
+    color: var(--green);
+}
+
+.footer {
+    color: var(--white);
+    text-align: center;
+}
+
